@@ -3,7 +3,7 @@ import { motion } from 'framer-motion';
 import SafeIcon from '../common/SafeIcon';
 import * as FiIcons from 'react-icons/fi';
 
-const { FiMenu, FiX, FiCalendar, FiMail } = FiIcons;
+const { FiMenu, FiX, FiCalendar, FiMail, FiLogIn } = FiIcons;
 
 const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -16,7 +16,7 @@ const Header = () => {
   ];
 
   return (
-    <motion.header 
+    <motion.header
       initial={{ y: -100 }}
       animate={{ y: 0 }}
       className="fixed top-0 w-full bg-gray-900/95 backdrop-blur-sm border-b border-gray-800 z-50"
@@ -45,19 +45,24 @@ const Header = () => {
 
           {/* CTA Buttons */}
           <div className="hidden md:flex space-x-4">
-            <a
-              href="#contact"
-              className="text-gray-300 hover:text-white transition-colors duration-200"
-            >
-              <SafeIcon icon={FiMail} className="inline mr-2" />
-              Contact
-            </a>
+            <div className="flex flex-col items-end">
+              <a href="#contact" className="text-gray-300 hover:text-white transition-colors duration-200">
+                <SafeIcon icon={FiMail} className="inline mr-2" /> Contact
+              </a>
+              <a 
+                href="https://app.mintedleads.com" 
+                target="_blank" 
+                rel="noopener noreferrer" 
+                className="text-gray-400 hover:text-cyan-400 transition-colors duration-200 text-sm mt-1"
+              >
+                <SafeIcon icon={FiLogIn} className="inline mr-1" /> Register/Login
+              </a>
+            </div>
             <a
               href="#booking"
               className="bg-cyan-500 hover:bg-cyan-600 text-white px-4 py-2 rounded-lg transition-colors duration-200 flex items-center"
             >
-              <SafeIcon icon={FiCalendar} className="mr-2" />
-              Book Consultation
+              <SafeIcon icon={FiCalendar} className="mr-2" /> Book Consultation
             </a>
           </div>
 
@@ -74,7 +79,7 @@ const Header = () => {
 
         {/* Mobile Navigation */}
         {isMenuOpen && (
-          <motion.div 
+          <motion.div
             initial={{ opacity: 0, y: -20 }}
             animate={{ opacity: 1, y: 0 }}
             className="md:hidden py-4 border-t border-gray-800"
@@ -95,16 +100,23 @@ const Header = () => {
                 className="block py-2 text-gray-300 hover:text-white transition-colors duration-200"
                 onClick={() => setIsMenuOpen(false)}
               >
-                <SafeIcon icon={FiMail} className="inline mr-2" />
-                Contact
+                <SafeIcon icon={FiMail} className="inline mr-2" /> Contact
+              </a>
+              <a
+                href="https://app.mintedleads.com"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="block py-2 text-gray-400 hover:text-cyan-400 transition-colors duration-200"
+                onClick={() => setIsMenuOpen(false)}
+              >
+                <SafeIcon icon={FiLogIn} className="inline mr-2" /> Register/Login
               </a>
               <a
                 href="#booking"
                 className="block bg-cyan-500 hover:bg-cyan-600 text-white px-4 py-2 rounded-lg transition-colors duration-200"
                 onClick={() => setIsMenuOpen(false)}
               >
-                <SafeIcon icon={FiCalendar} className="mr-2 inline" />
-                Book Consultation
+                <SafeIcon icon={FiCalendar} className="mr-2 inline" /> Book Consultation
               </a>
             </div>
           </motion.div>
