@@ -26,7 +26,7 @@ const Header = () => {
           {/* Logo */}
           <div className="flex-shrink-0">
             <span className="text-2xl font-bold text-white">
-              Minter<span className="text-cyan-400">Mark</span>
+              Minted<span className="text-cyan-400">Leads</span><span className="text-cyan-400">.com</span>
             </span>
           </div>
 

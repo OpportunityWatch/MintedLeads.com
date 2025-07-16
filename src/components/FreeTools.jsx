@@ -44,7 +44,7 @@ const FreeTools = () => {
             <div className="space-y-4 mb-8">
               <div className="flex items-center text-gray-300">
                 <SafeIcon icon={FiDatabase} className="h-5 w-5 text-cyan-400 mr-3" />
-                <span>FreshMintedLeads intelligence tool access</span>
+                <span>MintedLeads intelligence tool access</span>
               </div>
               <div className="flex items-center text-gray-300">
                 <SafeIcon icon={FiMail} className="h-5 w-5 text-cyan-400 mr-3" />
@@ -67,7 +67,7 @@ const FreeTools = () => {
             </button>
           </motion.div>
 
-          {/* FreshMintedLeads Tool */}
+          {/* MintedLeads Tool */}
           <motion.div 
             initial={{ opacity: 0, x: 30 }}
             whileInView={{ opacity: 1, x: 0 }}
@@ -76,7 +76,7 @@ const FreeTools = () => {
           >
             <div className="mb-6">
               <SafeIcon icon={FiDatabase} className="h-12 w-12 text-cyan-400 mb-4" />
-              <h3 className="text-2xl font-bold text-white mb-3">FreshMintedLeads</h3>
+              <h3 className="text-2xl font-bold text-white mb-3">MintedLeads</h3>
               <p className="text-gray-300">
                 Our powerful lead intelligence platform that finds, analyzes, and scores prospects for your business.
               </p>

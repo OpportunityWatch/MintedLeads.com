@@ -13,7 +13,7 @@ const Footer = () => {
           <div className="md:col-span-2">
             <div className="mb-4">
               <span className="text-2xl font-bold text-white">
-                Minter<span className="text-cyan-400">Mark</span>
+                Minted<span className="text-cyan-400">Leads</span><span className="text-cyan-400">.com</span>
               </span>
             </div>
             <p className="text-gray-400 mb-4 max-w-md">
@@ -48,14 +48,14 @@ const Footer = () => {
             <ul className="space-y-2 text-gray-400">
               <li className="flex items-center">
                 <SafeIcon icon={FiMail} className="h-4 w-4 mr-2" />
-                <a href="mailto:hello@mintermark.com" className="hover:text-cyan-400 transition-colors">
-                  hello@mintermark.com
+                <a href="mailto:hello@mintedleads.com" className="hover:text-cyan-400 transition-colors">
+                  hello@mintedleads.com
                 </a>
               </li>
               <li className="flex items-center">
                 <SafeIcon icon={FiPhone} className="h-4 w-4 mr-2" />
-                <a href="tel:+1234567890" className="hover:text-cyan-400 transition-colors">
-                  (123) 456-7890
+                <a href="tel:+16195309820" className="hover:text-cyan-400 transition-colors">
+                  (619) 530-9820
                 </a>
               </li>
             </ul>
@@ -64,7 +64,7 @@ const Footer = () => {
 
         <div className="border-t border-gray-800 mt-8 pt-8 flex flex-col md:flex-row justify-between items-center">
           <p className="text-gray-400 text-sm">
-            © 2024 MinterMark. All rights reserved.
+            © 2024 MintedLeads.com. All rights reserved.
           </p>
           <div className="flex space-x-6 mt-4 md:mt-0">
             <a href="#" className="text-gray-400 hover:text-cyan-400 text-sm transition-colors">Privacy Policy</a>

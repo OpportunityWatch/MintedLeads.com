@@ -174,8 +174,8 @@ const Contact = () => {
                   <SafeIcon icon={FiMail} className="h-5 w-5 text-cyan-400 mr-4" />
                   <div>
                     <p className="font-medium">Email</p>
-                    <a href="mailto:hello@mintermark.com" className="text-cyan-400 hover:text-cyan-300">
-                      hello@mintermark.com
+                    <a href="mailto:hello@mintedleads.com" className="text-cyan-400 hover:text-cyan-300">
+                      hello@mintedleads.com
                     </a>
                   </div>
                 </div>
@@ -184,8 +184,8 @@ const Contact = () => {
                   <SafeIcon icon={FiPhone} className="h-5 w-5 text-cyan-400 mr-4" />
                   <div>
                     <p className="font-medium">Phone</p>
-                    <a href="tel:+1234567890" className="text-cyan-400 hover:text-cyan-300">
-                      (123) 456-7890
+                    <a href="tel:+16195309820" className="text-cyan-400 hover:text-cyan-300">
+                      (619) 530-9820
                     </a>
                   </div>
                 </div>
